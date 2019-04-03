@@ -21,13 +21,5 @@ for i in remove:
 	del word_counts[i]
 
 print(word_counts.most_common(30))
-print(word_counts['STRESSED'])
-print(word_counts['STRESSING'])
+print('amount of times the word happy was said:',word_counts['HAPPY'])
 
-
-'''
-with open('words.txt', 'w') as f:
-    for item in word_counts:
-        f.write("%s\n" % item)
-
-'''
